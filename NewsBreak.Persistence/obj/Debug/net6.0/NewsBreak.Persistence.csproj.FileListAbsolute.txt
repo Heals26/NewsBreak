@@ -1,0 +1,17 @@
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\bin\Debug\net6.0\NewsBreak.Persistence.deps.json
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\bin\Debug\net6.0\NewsBreak.Persistence.dll
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\bin\Debug\net6.0\ref\NewsBreak.Persistence.dll
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\bin\Debug\net6.0\NewsBreak.Persistence.pdb
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\bin\Debug\net6.0\NewsBreak.Application.dll
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\bin\Debug\net6.0\NewsBreak.Domain.dll
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\bin\Debug\net6.0\NewsBreak.Application.pdb
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\bin\Debug\net6.0\NewsBreak.Domain.pdb
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\obj\Debug\net6.0\NewsBreak.Persistence.csproj.AssemblyReference.cache
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\obj\Debug\net6.0\NewsBreak.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\obj\Debug\net6.0\NewsBreak.Persistence.AssemblyInfoInputs.cache
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\obj\Debug\net6.0\NewsBreak.Persistence.AssemblyInfo.cs
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\obj\Debug\net6.0\NewsBreak.Persistence.csproj.CoreCompileInputs.cache
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\obj\Debug\net6.0\NewsBreak.Persistence.csproj.CopyComplete
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\obj\Debug\net6.0\NewsBreak.Persistence.dll
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\obj\Debug\net6.0\ref\NewsBreak.Persistence.dll
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\obj\Debug\net6.0\NewsBreak.Persistence.pdb

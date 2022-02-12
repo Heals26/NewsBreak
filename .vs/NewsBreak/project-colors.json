@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6596c73b-cba1-449c-a7d4-e339ddb61185": {
+      "ProjectGuid": "6596c73b-cba1-449c-a7d4-e339ddb61185",
+      "DisplayName": "NewsBreak.Domain",
+      "ColorIndex": 0
+    },
+    "b53d0e32-b0c3-468f-a53b-6034dd4bc245": {
+      "ProjectGuid": "b53d0e32-b0c3-468f-a53b-6034dd4bc245",
+      "DisplayName": "NewsBreak.Persistence",
+      "ColorIndex": 1
+    },
+    "4daa1bd2-701a-4d65-9a9a-41e99dbdc3bf": {
+      "ProjectGuid": "4daa1bd2-701a-4d65-9a9a-41e99dbdc3bf",
+      "DisplayName": "NewsBreak.WebApi",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "ee69614c-8afa-4493-80c3-7e0b50193290": {
+      "ProjectGuid": "ee69614c-8afa-4493-80c3-7e0b50193290",
+      "DisplayName": "NewsBreak.Application",
+      "ColorIndex": 3
+    }
+  },
+  "NextColorIndex": 4
+}
