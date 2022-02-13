@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NewsBreak.Application.Services.Data;
+using NewsBreak.Domain.Entities;
 using System.Collections.Concurrent;
 
 namespace NewsBreak.Persistence
@@ -15,6 +16,9 @@ namespace NewsBreak.Persistence
         {
 
         }
+
+        public DbSet<Account> Accounts { get; set; }
+        public DbSet<ClientApplication> ClientApplications { get; set; }
 
         public void AddEntity<TEntity>(TEntity entity)
         {

@@ -22,10 +22,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\NewsBack.Persistence\NewsBreak.Persistence.csproj" />
     <ProjectReference Include="..\NewsBreak.Application\NewsBreak.Application.csproj" />
     <ProjectReference Include="..\NewsBreak.Persistence\NewsBreak.Persistence.csproj" />

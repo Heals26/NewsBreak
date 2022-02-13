@@ -21,6 +21,7 @@ namespace NewsBreak.WebApi.Startup
             this.ConfigureAppContextSettings(services);
 
             services.AddSecurityServices();
+            services.AddInterfaces();
         }
 
         public void Configure(IApplicationBuilder app)

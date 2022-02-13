@@ -91,3 +91,13 @@ D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.WebApi\obj\Debug\net6.0\NewsBrea
 D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.WebApi\obj\Debug\net6.0\ref\NewsBreak.WebApi.dll
 D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.WebApi\obj\Debug\net6.0\NewsBreak.WebApi.pdb
 D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.WebApi\obj\Debug\net6.0\NewsBreak.WebApi.genruntimeconfig.cache
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.WebApi\bin\Debug\net6.0\AutoMapper.dll
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.WebApi\bin\Debug\net6.0\EntityFramework.SqlServer.dll
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.WebApi\bin\Debug\net6.0\EntityFramework.dll
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.WebApi\bin\Debug\net6.0\System.CodeDom.dll
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.WebApi\bin\Debug\net6.0\System.Data.SqlClient.dll
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.WebApi\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.WebApi\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.WebApi\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.WebApi\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.WebApi\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll

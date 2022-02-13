@@ -15,3 +15,5 @@ D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\obj\Debug\net6.0\New
 D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\obj\Debug\net6.0\NewsBreak.Persistence.dll
 D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\obj\Debug\net6.0\ref\NewsBreak.Persistence.dll
 D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\obj\Debug\net6.0\NewsBreak.Persistence.pdb
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\bin\Debug\net6.0\NewsBreak.Persistence.runtimeconfig.json
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Persistence\obj\Debug\net6.0\NewsBreak.Persistence.genruntimeconfig.cache

@@ -10,3 +10,8 @@ D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Application\obj\Debug\net6.0\New
 D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Application\obj\Debug\net6.0\NewsBreak.Application.dll
 D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Application\obj\Debug\net6.0\ref\NewsBreak.Application.dll
 D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Application\obj\Debug\net6.0\NewsBreak.Application.pdb
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Application\bin\Debug\net6.0\NewsBreak.Application.runtimeconfig.json
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Application\bin\Debug\net6.0\NewsBreak.Domain.dll
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Application\bin\Debug\net6.0\NewsBreak.Domain.pdb
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Application\obj\Debug\net6.0\NewsBreak.Application.csproj.CopyComplete
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Application\obj\Debug\net6.0\NewsBreak.Application.genruntimeconfig.cache
