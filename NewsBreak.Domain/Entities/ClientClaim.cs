@@ -1,7 +1,7 @@
 ﻿namespace NewsBreak.Domain.Entities
 {
 
-    public class Claim
+    public class ClientClaim
     {
 
         #region Properties

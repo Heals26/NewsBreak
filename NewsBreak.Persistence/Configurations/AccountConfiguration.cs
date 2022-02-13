@@ -23,6 +23,19 @@ namespace NewsBreak.Persistence.Configurations
                 password.Property<string>("m_Password")
                 .IsRequired();
             });
+
+            entity.HasMany(e => e.Claims)
+                .WithOne();
+
+            entity.Property(e => e.Created)
+                .IsRequired()
+                .HasDefaultValue(DateTime.UtcNow);
+
+            entity.Property(e => e.FirstName)
+                .IsRequired();
+
+            entity.Property(e => e.LastName)
+                .IsRequired();
         }
 
     }

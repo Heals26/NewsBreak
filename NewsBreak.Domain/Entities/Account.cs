@@ -11,7 +11,7 @@ namespace NewsBreak.Domain.Entities
 
         public Account()
         {
-            this.Claims = new HashSet<Claim>();
+            this.Claims = new HashSet<ClientClaim>();
         }
 
         #endregion Constructors
@@ -25,7 +25,7 @@ namespace NewsBreak.Domain.Entities
         public long LastName { get; set; }
         public Password Password { get; set; }
 
-        public ICollection<Claim> Claims { get; set; }
+        public ICollection<ClientClaim> Claims { get; set; }
 
         #endregion Properties
 
