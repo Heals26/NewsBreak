@@ -21,8 +21,8 @@ namespace NewsBreak.Domain.Entities
         public long AccountID { get; set; }
         public DateTime Created { get; set; }
         public string Email { get; set; }
-        public long FirstName { get; set; }
-        public long LastName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
         public Password Password { get; set; }
 
         public ICollection<ClientClaim> Claims { get; set; }

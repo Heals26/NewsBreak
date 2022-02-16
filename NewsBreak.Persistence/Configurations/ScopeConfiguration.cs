@@ -7,7 +7,7 @@ namespace NewsBreak.Persistence.Configurations
     public class ScopeConfiguration : IEntityTypeConfiguration<Scope>
     {
 
-        #region Interface Implementation
+        #region IEntityTypeConfiguration Implementation
 
         public void Configure(EntityTypeBuilder<Scope> entity)
         {
@@ -19,7 +19,7 @@ namespace NewsBreak.Persistence.Configurations
                 .IsRequired();
         }
 
-        #endregion Interface Implementation
+        #endregion IEntityTypeConfiguration Implementation
 
     }
 

@@ -8,7 +8,7 @@ namespace NewsBreak.Persistence.Configurations
     public class ClientApplicationConfiguration : IEntityTypeConfiguration<ClientApplication>
     {
 
-        #region Interface Implementation
+        #region IEntityTypeConfiguration Implementation
 
         public void Configure(EntityTypeBuilder<ClientApplication> entity)
         {
@@ -28,7 +28,7 @@ namespace NewsBreak.Persistence.Configurations
                 .IsRequired(false);
         }
 
-        #endregion Interface Implementation
+        #endregion IEntityTypeConfiguration Implementation
 
     }
 

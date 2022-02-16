@@ -7,7 +7,7 @@ namespace NewsBreak.Persistence.Configurations
     public class ClientApplicationScopeConfiguration : IEntityTypeConfiguration<ClientApplicationScope>
     {
 
-        #region Interface Implementation
+        #region IEntityTypeConfiguration Implementation
 
         public void Configure(EntityTypeBuilder<ClientApplicationScope> entity)
         {
@@ -19,7 +19,7 @@ namespace NewsBreak.Persistence.Configurations
                 .WithOne();
         }
 
-        #endregion Interface Implementation
+        #endregion IEntityTypeConfiguration Implementation
 
     }
 

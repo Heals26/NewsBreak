@@ -27,7 +27,7 @@ namespace NewsBreak.Application.Security.Authentication
 
         #endregion Properties
 
-        #region Interface Implementation
+        #region IAuthenticationService Implementation
 
         public Claim[] CalculateClaims(ICollection<ClientClaim> claims)
         {
@@ -96,7 +96,7 @@ namespace NewsBreak.Application.Security.Authentication
             }
         }
 
-        #endregion Interface Implementation
+        #endregion IAuthenticationService Implementation
 
         #region Methods
 
