@@ -28,7 +28,7 @@ namespace NewsBreak.Application.UseCases.Accounts.GetAccount
 
         public async Task<GetAccountResponse> Handle(GetAccountRequest request, CancellationToken cancellationToken)
         {
-            var _Account = await this.m_DbContext.Accounts.FindAsync(request.AccountID);
+            var _Account = await this.m_DbContext.FindAsync(request.AccountID);
 
             return this.m_Mapper.Map<GetAccountResponse>(_Account);
         }

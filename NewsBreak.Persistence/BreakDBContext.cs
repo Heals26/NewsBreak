@@ -22,23 +22,23 @@ namespace NewsBreak.Persistence
 
         public void AddEntity<TEntity>(TEntity entity)
         {
-            if (entity != null)
-                this.Add(entity);
-            throw new NullReferenceException();
+            if (entity == null)
+                throw new NullReferenceException();
+            this.Add(entity);
         }
 
         public void AddEntities<TEntity>(TEntity entities)
         {
-            if (entities != null)
-                this.AddRange(entities);
-            throw new NullReferenceException();
+            if (entities == null)
+                throw new NullReferenceException();
+            this.AddRange(entities);
         }
 
         public void RemoveEntity<TEntity>(TEntity entity)
         {
-            if (entity != null)
-                this.Remove(entity);
-            throw new NullReferenceException();
+            if (entity == null)
+                throw new NullReferenceException();
+            this.Remove(entity);
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
