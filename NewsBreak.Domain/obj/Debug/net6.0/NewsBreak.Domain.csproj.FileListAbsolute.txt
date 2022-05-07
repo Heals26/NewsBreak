@@ -1,6 +1,5 @@
 D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Domain\bin\Debug\net6.0\NewsBreak.Domain.deps.json
 D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Domain\bin\Debug\net6.0\NewsBreak.Domain.dll
-D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Domain\bin\Debug\net6.0\ref\NewsBreak.Domain.dll
 D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Domain\bin\Debug\net6.0\NewsBreak.Domain.pdb
 D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Domain\obj\Debug\net6.0\NewsBreak.Domain.csproj.AssemblyReference.cache
 D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Domain\obj\Debug\net6.0\NewsBreak.Domain.GeneratedMSBuildEditorConfig.editorconfig
@@ -10,3 +9,4 @@ D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Domain\obj\Debug\net6.0\NewsBrea
 D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Domain\obj\Debug\net6.0\NewsBreak.Domain.dll
 D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Domain\obj\Debug\net6.0\ref\NewsBreak.Domain.dll
 D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Domain\obj\Debug\net6.0\NewsBreak.Domain.pdb
+D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.Domain\obj\Debug\net6.0\refint\NewsBreak.Domain.dll

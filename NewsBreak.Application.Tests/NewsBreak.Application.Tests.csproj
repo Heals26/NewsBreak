@@ -27,4 +27,8 @@
     <ProjectReference Include="..\NewsBreak.Application\NewsBreak.Application.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Infrastructure\Database\" />
+  </ItemGroup>
+
 </Project>

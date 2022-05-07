@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using NewsBreak.Application.Security.Authentication;
-using NewsBreak.Application.Services.Security.Authentication;
+using NewsBreak.Application.Infrastructure.Validation;
+using NewsBreak.Application.Services.Validation;
 
 namespace NewsBreak.WebApi.Startup
 {
@@ -11,12 +11,18 @@ namespace NewsBreak.WebApi.Startup
         public static void AddInterfaces(this IServiceCollection services)
         {
             services.AddAuthenticationInterfaces();
+            services.AddPipelineInterfaces();
         }
 
         public static void AddAuthenticationInterfaces(this IServiceCollection services)
         {
-            services.AddScoped<IAuthenticationService, AuthenticationService>();
-            services.AddScoped<IAuthenticationContainer, AuthenticationContainer>();
+
+        }
+
+        public static void AddPipelineInterfaces(this IServiceCollection services)
+        {
+            services.AddScoped<IEntityExistenceChecker, EntityExistenceChecker>();
+
         }
 
     }

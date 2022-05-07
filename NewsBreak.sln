@@ -10,13 +10,16 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsBreak.Persistence", "NewsBreak.Persistence\NewsBreak.Persistence.csproj", "{B001C731-7A6B-4330-93F3-6C20467575EC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsBreak.WebApi", "NewsBreak.WebApi\NewsBreak.WebApi.csproj", "{478B09D2-9749-4A7C-8D2A-74387069B661}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EC59FBED-6810-43FB-9F04-1F6ACACE4C5E} = {EC59FBED-6810-43FB-9F04-1F6ACACE4C5E}
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{56D0CF42-E70F-47C6-BE69-68910AF108FB}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsBreak.Application.Tests", "NewsBreak.Application.Tests\NewsBreak.Application.Tests.csproj", "{71E00471-5FE8-47EF-941C-BFB32D70D4C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NewsBreak.Application.Tests", "NewsBreak.Application.Tests\NewsBreak.Application.Tests.csproj", "{71E00471-5FE8-47EF-941C-BFB32D70D4C0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
