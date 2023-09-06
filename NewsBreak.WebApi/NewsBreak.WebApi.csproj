@@ -24,7 +24,12 @@
   <ItemGroup>
     <ProjectReference Include="..\NewsBack.Persistence\NewsBreak.Persistence.csproj" />
     <ProjectReference Include="..\NewsBreak.Application\NewsBreak.Application.csproj" />
+    <ProjectReference Include="..\NewsBreak.Infrastructure\NewsBreak.Infrastructure.csproj" />
     <ProjectReference Include="..\NewsBreak.Persistence\NewsBreak.Persistence.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="InterfaceAdapters\" />
   </ItemGroup>
 
 </Project>

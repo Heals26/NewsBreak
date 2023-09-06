@@ -11,7 +11,7 @@ namespace NewsBreak.Application.UseCases.Users.CreateUser
 
         #region Fields
 
-        private readonly IDbContext m_Dbcontext;
+        private readonly IDbContext m_PersistenceContext;
         private readonly IMapper m_Mapper;
 
         #endregion Fields
@@ -20,7 +20,7 @@ namespace NewsBreak.Application.UseCases.Users.CreateUser
 
         public CreateUserInteractor(IDbContext dbContext, IMapper mapper)
         {
-            this.m_Dbcontext = dbContext;
+            this.m_PersistenceContext = dbContext;
             this.m_Mapper = mapper;
         }
 
@@ -31,7 +31,7 @@ namespace NewsBreak.Application.UseCases.Users.CreateUser
         Task IUseCaseInteractor<CreateUserInputPort, ICreateUserOutputPort>.HandleAsync(CreateUserInputPort inputPort, ICreateUserOutputPort outputPort, CancellationToken cancellationToken)
         {
             var _User = this.m_Mapper.Map<User>(inputPort);
-            this.m_Dbcontext.Add(_User);
+            this.m_PersistenceContext.Add(_User);
 
             return outputPort.PresentCreatedUserAsync(_User.UserID, cancellationToken);
         }

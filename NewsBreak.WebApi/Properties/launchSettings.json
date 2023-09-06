@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "NewsBreak.WebApi": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "lifxBearerToken": "cc873eefccdc04d661c39900a5af1182bb0362f05777b9fd7c3233fc700d6272"
+      }
+    }
+  }
+}

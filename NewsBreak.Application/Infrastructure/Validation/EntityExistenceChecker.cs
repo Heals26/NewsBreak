@@ -11,14 +11,14 @@ namespace NewsBreak.Application.Infrastructure.Validation
 
         #region - - - - - - Fields - - - - - -
 
-        private readonly IDbContext m_DbContext;
+        private readonly IDbContext m_PersistenceContext;
 
         #endregion Fields
 
         #region - - - - - - Constructors - - - - - -
 
         public EntityExistenceChecker(IDbContext persistenceContext)
-            => this.m_DbContext = persistenceContext;
+            => this.m_PersistenceContext = persistenceContext;
 
         #endregion Constructors
 
@@ -29,7 +29,7 @@ namespace NewsBreak.Application.Infrastructure.Validation
             if (typeof(TEntity).IsSubclassOf(typeof(Enumeration)))
                 return DelegateFactory.GetFunction<object, bool>(typeof(EnumerationExistenceFactory<>).MakeGenericType(typeof(TEntity)))?.Invoke(entityID) ?? false;
 
-            return this.m_DbContext.Find<TEntity>(entityID, additionalEntityIDs) != null;
+            return this.m_PersistenceContext.Find<TEntity>(entityID, additionalEntityIDs) != null;
         }
 
         #endregion Methods

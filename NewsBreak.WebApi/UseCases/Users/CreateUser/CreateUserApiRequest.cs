@@ -1,7 +1,7 @@
-﻿namespace NewsBreak.WebApi.InOutDtos.Users.CreateUser
+﻿namespace NewsBreak.WebApi.UseCases.Users.CreateUser
 {
 
-    public class CreateUserRequest
+    public class CreateUserApiRequest
     {
 
         #region Properties

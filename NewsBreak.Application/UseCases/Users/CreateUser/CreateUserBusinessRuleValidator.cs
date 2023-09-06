@@ -12,7 +12,7 @@ namespace NewsBreak.Application.UseCases.Users.CreateUser
 
         #region Fields
 
-        private readonly IDbContext m_DbContext;
+        private readonly IDbContext m_PersistenceContext;
 
         #endregion Fields
 
@@ -20,7 +20,7 @@ namespace NewsBreak.Application.UseCases.Users.CreateUser
 
         public CreateUserBusinessRuleValidator(IDbContext dbContext)
         {
-            this.m_DbContext = dbContext;
+            this.m_PersistenceContext = dbContext;
         }
 
         #endregion Constructors
@@ -31,7 +31,7 @@ namespace NewsBreak.Application.UseCases.Users.CreateUser
         {
             var _ValidationFailures = new List<ValidationFailure>();
 
-            if (this.m_DbContext.GetEntities<User>().Any(u => u.Email == inputPort.Email))
+            if (this.m_PersistenceContext.GetEntities<User>().Any(u => u.Email == inputPort.Email))
                 _ValidationFailures.Add(new ValidationFailure(nameof(inputPort.Email), "This email is already in use, select \"Forgot Password\" if you have forgotten your password"));
 
             return Task.FromResult(new ValidatorResult(_ValidationFailures));

@@ -13,7 +13,6 @@ namespace NewsBreak.Application.UseCases.Users.CreateUser
         {
             _ = this.RuleFor(r => r.Email).EmailAddress();
             _ = this.RuleFor(r => r.Password).NotEmpty();
-            _ = this.RuleFor(r => r.CreatedOnUTC).NotEmpty();
             _ = this.RuleFor(r => r.FirstName).NotEmpty();
             _ = this.RuleFor(r => r.LastName).NotEmpty();
         }

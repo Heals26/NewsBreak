@@ -3,7 +3,7 @@ using CleanArchitecture.Mediator;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using NewsBreak.Application.UseCases.Users.CreateUser;
-using NewsBreak.WebApi.InOutDtos.Users.CreateUser;
+using NewsBreak.WebApi.UseCases.Users.CreateUser;
 using System.Net;
 
 namespace NewsBreak.WebApi.Controllers
@@ -23,7 +23,7 @@ namespace NewsBreak.WebApi.Controllers
         [HttpPost()]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public IActionResult CreateUserAsync([FromBody]CreateUserRequest request)
+        public IActionResult CreateUserAsync([FromBody]CreateUserApiRequest request)
         {
             var _Input = this.Mapper.Map<CreateUserInputPort>(request);
             //var _Presenter = await this.UseCaseInvoker.InvokeUseCaseAsync(_Input, ICreateUserOutputPort, new CancellationToken());

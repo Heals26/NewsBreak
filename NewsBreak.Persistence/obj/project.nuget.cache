@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "H5+9iiz5BsvEk6OvC5w3sWXPb37SRiWLxrrqOTCcNyG0aGL5n9xBs88ZC8o+nc+SjdR5NmoPZhN3r2J7YGpmCw==",
+  "dgSpecHash": "5bFXs5ZZWgpiaBksCiRi8tqCdkwtCF+0GcL5JNsYKHFxGNbXPc6Dpmw5974Gt+vWL2sT430mzmiVp8VjEyadXQ==",
   "success": true,
   "projectFilePath": "D:\\Projects\\NewsBack\\GitHub\\NewsBreak\\NewsBreak.Persistence\\NewsBreak.Persistence.csproj",
   "expectedPackageFiles": [
@@ -34,7 +34,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Microsoft.AspNet.Identity.Core 2.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'Microsoft.AspNet.Identity.Core 2.2.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "Microsoft.AspNet.Identity.Core",
       "targetGraphs": [
         "net6.0"

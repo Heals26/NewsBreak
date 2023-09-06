@@ -11,7 +11,7 @@ namespace NewsBreak.Domain.Enumerations
 
         protected Enumeration() { }
 
-        protected Enumeration(string name, int value)
+        protected Enumeration(string name, long value)
         {
             this.Name = name;
             this.Value = value;
@@ -23,7 +23,7 @@ namespace NewsBreak.Domain.Enumerations
 
         public string Name { get; }
 
-        public int Value { get; }
+        public long Value { get; }
 
         #endregion Properties
 
@@ -55,7 +55,7 @@ namespace NewsBreak.Domain.Enumerations
                         ?? throw new InvalidEnumException(name);
         }
 
-        public static T FromValue<T>(int value) where T : Enumeration
+        public static T FromValue<T>(long value) where T : Enumeration
             => GetAll<T>()
                     .SingleOrDefault(vt => vt.Value == value)
                         ?? throw new InvalidEnumException(value.ToString());
@@ -72,7 +72,7 @@ namespace NewsBreak.Domain.Enumerations
         public override int GetHashCode()
             => this.Value.GetHashCode();
 
-        public static implicit operator int(Enumeration enumeration)
+        public static implicit operator long(Enumeration enumeration)
             => enumeration.Value;
 
         public override string ToString()

@@ -14,7 +14,7 @@ namespace NewsBreak.Application.UseCases.Users.GetUsers
         #region Fields
 
         private readonly IMapper m_Mapper;
-        private readonly IDbContext m_DbContext;
+        private readonly IDbContext m_PersistenceContext;
 
         #endregion Fields
 
@@ -23,7 +23,7 @@ namespace NewsBreak.Application.UseCases.Users.GetUsers
         public GetUsersInteractor(IDbContext dbContext, IMapper mapper)
         {
             this.m_Mapper = mapper;
-            this.m_DbContext = dbContext;
+            this.m_PersistenceContext = dbContext;
         }
 
         #endregion Constructors
@@ -31,7 +31,7 @@ namespace NewsBreak.Application.UseCases.Users.GetUsers
         #region Methods
 
         Task IUseCaseInteractor<GetUsersInputPort, IGetUsersOutputPort>.HandleAsync(GetUsersInputPort inputPort, IGetUsersOutputPort outputPort, CancellationToken cancellationToken)
-            => outputPort.PresentUsersAsync(this.m_DbContext.GetEntities<User>()
+            => outputPort.PresentUsersAsync(this.m_PersistenceContext.GetEntities<User>()
                 .ProjectTo<UserDto>(this.m_Mapper.ConfigurationProvider), cancellationToken);
 
         #endregion Methods
