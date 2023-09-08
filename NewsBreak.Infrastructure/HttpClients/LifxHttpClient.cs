@@ -27,6 +27,12 @@
 
         #endregion Properties
 
+        #region Methods
+
+        public virtual async Task<HttpResponseMessage>
+
+        #endregion Methods
+
     }
 
 }

@@ -28,8 +28,4 @@
     <ProjectReference Include="..\NewsBreak.Persistence\NewsBreak.Persistence.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="InterfaceAdapters\" />
-  </ItemGroup>
-
 </Project>

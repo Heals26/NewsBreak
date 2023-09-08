@@ -18,9 +18,4 @@
     <ProjectReference Include="..\NewsBreak.Domain\NewsBreak.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\Security\" />
-    <Folder Include="UseCases\Lifx\GetState\" />
-  </ItemGroup>
-
 </Project>
