@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using NewsBreak.Infrastructure.HttpClients;
 using NewsBreak.Infrastructure.Services;
 using NewsBreak.WebApi.Infrastructure.Configuration;
 
@@ -66,7 +65,7 @@ namespace NewsBreak.WebApi.Startup
 
         private void AddHttpClients(IServiceCollection services, IConfiguration configuration)
         {
-            _ = services.AddHttpClient<LifxHttpClient>(httpClient =>
+            _ = services.AddHttpClient<LifxHttpGatway>(httpClient =>
             {
                 httpClient.BaseAddress = new Uri("https://api.lifx.com/v1", UriKind.Absolute);
                 httpClient.DefaultRequestHeaders.Add("Authorization", this.KeyManager.GetSecret("lifxBearerToken"));

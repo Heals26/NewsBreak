@@ -339,3 +339,5 @@ ASALocalRun/
 hicora.Api.WebApi/appsettings.Development.json
 hicora.Api.WebApi/appsettings.Development.json
 ~Reports/
+.vs/NewsBreak/DesignTimeBuild/.dtbcache.v2
+.vs/NewsBreak/v17/.suo
