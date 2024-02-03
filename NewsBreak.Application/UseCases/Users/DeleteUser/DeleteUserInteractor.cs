@@ -16,13 +16,13 @@ namespace NewsBreak.Application.UseCases.Users.DeleteUser
 
         #region Fields
 
-        private readonly IDbContext m_PersistenceContext;
+        private readonly IPersistenceContext m_PersistenceContext;
 
         #endregion Fields
 
         #region Constructors
 
-        public DeleteUserInteractor(IDbContext dbContext)
+        public DeleteUserInteractor(IPersistenceContext dbContext)
         {
             this.m_PersistenceContext = dbContext;
         }

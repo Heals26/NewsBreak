@@ -4,17 +4,24 @@ using NewsBreak.Application.Services.Persistence;
 namespace NewsBreak.Persistence.Data
 {
 
-    public class PersistenceContext : DbContext, IDbContext
+    public class PersistenceContext : DbContext, IPersistenceContext
     {
 
         #region Constructors
-
+        //dotnet ef migrations add InitialMigration --project NewsBreak.Persistence --context PersistenceContext --startup-project NewsBreak.WebApi
+        //dotnet ef migrations add InitialMigration --project NewsBreak.Persistence --context PersistenceContext --startup-project NewsBreak.WebApi
         public PersistenceContext(DbContextOptions<PersistenceContext> options)
             : base(options) { }
 
         #endregion Constructors
 
         #region Methods
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+            => _ = modelBuilder.ApplyConfigurationsFromAssembly(typeof(PersistenceContext).Assembly);
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+            => base.OnConfiguring(optionsBuilder);
 
         public void Add<TEntity>(TEntity entity) where TEntity : class
             => base.Add(entity);
@@ -29,7 +36,7 @@ namespace NewsBreak.Persistence.Data
             => base.Remove(entity);
 
         public void RemoveRange<TEntity>(IEnumerable<TEntity> entities) where TEntity : class
-            => base.RemoveRange();
+            => base.RemoveRange(entities);
 
         public Task<int> SaveChangesAsync(CancellationToken cancellationToken)
             => base.SaveChangesAsync(cancellationToken);

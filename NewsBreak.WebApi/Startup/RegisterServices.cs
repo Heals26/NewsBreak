@@ -15,13 +15,14 @@ namespace NewsBreak.WebApi.Startup
     public static class RegisterServices
     {
 
-        const string BASIC = "BASIC";
-        const string BEARER = "BEARER";
+        const string BASIC = "Basic";
+        const string BEARER = "Bearer";
 
-        public static void AddSecurityServices(this IServiceCollection services)
+        public static void AddSecurityServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddAuthenticationServices();
-            services.AddAuthorisationServices();
+            //services.AddAuthenticationServices();
+            //services.AddAuthorisationServices();
+            services.AddEntityFramework(configuration);
             services.AddMvcServices();
             services.AddSwaggerService();
         }
@@ -29,7 +30,7 @@ namespace NewsBreak.WebApi.Startup
         public static void AddEntityFramework(this IServiceCollection services, IConfiguration configuration)
         {
             var _DataStorageOptions = configuration.GetSection("DataStorageSettings").Get<DataStorageOptions>();
-            _ = services.AddDbContext<IDbContext, PersistenceContext>(options =>
+            _ = services.AddDbContext<IPersistenceContext, PersistenceContext>(options =>
             {
                 _ = options.UseSqlServer(_DataStorageOptions.DatabaseConnectionString, o => o.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery));
             });

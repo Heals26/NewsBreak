@@ -3,7 +3,7 @@
 namespace NewsBreak.Application.UseCases.NumberPlates.CreateNumberPlate
 {
 
-    public class CreateNumberPlatesInputPort : IUseCaseInputPort<ICreateNumberPlateOutputPort>
+    public class CreateNumberPlateInputPort : IUseCaseInputPort<ICreateNumberPlateOutputPort>
     {
 
         #region Properties

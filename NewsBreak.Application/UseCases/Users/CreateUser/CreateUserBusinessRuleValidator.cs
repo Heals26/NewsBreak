@@ -12,13 +12,13 @@ namespace NewsBreak.Application.UseCases.Users.CreateUser
 
         #region Fields
 
-        private readonly IDbContext m_PersistenceContext;
+        private readonly IPersistenceContext m_PersistenceContext;
 
         #endregion Fields
 
         #region Constructors
 
-        public CreateUserBusinessRuleValidator(IDbContext dbContext)
+        public CreateUserBusinessRuleValidator(IPersistenceContext dbContext)
         {
             this.m_PersistenceContext = dbContext;
         }

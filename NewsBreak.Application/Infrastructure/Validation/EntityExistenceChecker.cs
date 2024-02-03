@@ -11,13 +11,13 @@ namespace NewsBreak.Application.Infrastructure.Validation
 
         #region - - - - - - Fields - - - - - -
 
-        private readonly IDbContext m_PersistenceContext;
+        private readonly IPersistenceContext m_PersistenceContext;
 
         #endregion Fields
 
         #region - - - - - - Constructors - - - - - -
 
-        public EntityExistenceChecker(IDbContext persistenceContext)
+        public EntityExistenceChecker(IPersistenceContext persistenceContext)
             => this.m_PersistenceContext = persistenceContext;
 
         #endregion Constructors

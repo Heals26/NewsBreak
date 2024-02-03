@@ -1,7 +1,7 @@
 ﻿namespace NewsBreak.Application.Services.Persistence
 {
 
-    public interface IDbContext
+    public interface IPersistenceContext
     {
 
         #region Methods

@@ -4,12 +4,12 @@ using NewsBreak.Application.UseCases.Lifx.SetState;
 namespace NewsBreak.WebApi.InterfaceAdapters
 {
 
-    public class LifxController : BaseCleanController
+    public class LifxCleanController : BaseCleanController
     {
 
         #region Constructors
 
-        public LifxController(IUseCaseInvoker useCaseInvoker) : base(useCaseInvoker) { }
+        public LifxCleanController(IUseCaseInvoker useCaseInvoker) : base(useCaseInvoker) { }
 
         #endregion Constructors
 

@@ -1,8 +1,9 @@
 ﻿using Microsoft.AspNetCore.Builder;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using NewsBreak.Infrastructure.HttpGateways;
-using NewsBreak.Infrastructure.Services;
+using NewsBreak.Persistence.Data;
 using NewsBreak.WebApi.Infrastructure.Configuration;
 
 namespace NewsBreak.WebApi.Startup
@@ -13,10 +14,10 @@ namespace NewsBreak.WebApi.Startup
 
         #region Constructors
 
-        public Startup(IConfiguration configuration, IKeyManager keyManager)
+        public Startup(IConfiguration configuration)
         {
             this.Configuration = configuration;
-            this.KeyManager = keyManager;
+            //this.KeyManager = keyManager;
         }
 
         #endregion Constructors
@@ -24,7 +25,7 @@ namespace NewsBreak.WebApi.Startup
         #region Properties
 
         public IConfiguration Configuration { get; }
-        public IKeyManager KeyManager { get; }
+        //public IKeyManager KeyManager { get; }
 
         #endregion Properties
 
@@ -32,13 +33,14 @@ namespace NewsBreak.WebApi.Startup
 
         public void ConfigureServices(IServiceCollection services)
         {
+            _ = services.AddOptions();
             this.ConfigureAppContextSettings(services);
 
-            services.AddSecurityServices();
+            services.AddSecurityServices(this.Configuration);
             services.AddInterfaces();
         }
 
-        public void Configure(IApplicationBuilder app)
+        public void Configure(IApplicationBuilder app, PersistenceContext persistenceContext)
         {
             _ = app.UseSwagger();
             _ = app.UseSwaggerUI(s =>
@@ -57,6 +59,8 @@ namespace NewsBreak.WebApi.Startup
             {
                 _ = endpoints.MapControllers();
             });
+
+            persistenceContext.Database.Migrate();
         }
 
         public void ConfigureAppContextSettings(IServiceCollection services)
@@ -69,7 +73,7 @@ namespace NewsBreak.WebApi.Startup
             _ = services.AddHttpClient<LifxHttpGateway>(httpClient =>
             {
                 httpClient.BaseAddress = new Uri("https://api.lifx.com/v1", UriKind.Absolute);
-                httpClient.DefaultRequestHeaders.Add("Authorization", this.KeyManager.GetSecret("lifxBearerToken"));
+                //httpClient.DefaultRequestHeaders.Add("Authorization", this.KeyManager.GetSecret("lifxBearerToken"));
             });
 
             // Register SteelSeries address

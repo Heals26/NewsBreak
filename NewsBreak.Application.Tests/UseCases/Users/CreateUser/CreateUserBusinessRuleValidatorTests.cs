@@ -21,7 +21,7 @@ namespace NewsBreak.Application.Tests.UseCases.Users.CreateUser
         #region Fields
 
         private readonly Mock<IMapper> m_MockMapper = new();
-        private readonly Mock<IDbContext> m_MockDbContext = new();
+        private readonly Mock<IPersistenceContext> m_MockDbContext = new();
 
         private readonly User m_User;
         private readonly CreateUserInputPort m_InputPort;

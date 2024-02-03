@@ -11,14 +11,14 @@ namespace NewsBreak.Application.UseCases.Users.CreateUser
 
         #region Fields
 
-        private readonly IDbContext m_PersistenceContext;
+        private readonly IPersistenceContext m_PersistenceContext;
         private readonly IMapper m_Mapper;
 
         #endregion Fields
 
         #region Constructors
 
-        public CreateUserInteractor(IDbContext dbContext, IMapper mapper)
+        public CreateUserInteractor(IPersistenceContext dbContext, IMapper mapper)
         {
             this.m_PersistenceContext = dbContext;
             this.m_Mapper = mapper;
