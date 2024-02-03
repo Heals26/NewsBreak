@@ -8,7 +8,7 @@ namespace NewsBreak.Application.Services.Gateways
 
         #region Methods
 
-        Task SetState(LifxStateDto lifxStateDto, CancellationToken cancellationToken);
+        Task<HttpResponseMessage> SetState(LifxStateDto lifxStateDto, CancellationToken cancellationToken);
         Task TurnOn(CancellationToken cancellationToken);
         Task TurnOff(CancellationToken cancellationToken);
 

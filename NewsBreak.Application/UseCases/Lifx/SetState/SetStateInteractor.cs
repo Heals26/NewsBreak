@@ -11,7 +11,7 @@ namespace NewsBreak.Application.UseCases.Lifx.SetState
 
         #region Fields
 
-        private readonly ILifxGateway m_Gateway;
+        private readonly ILifxGateway m_LifxGateway;
         private readonly IMapper m_Mapper;
 
         #endregion Fields
@@ -20,7 +20,7 @@ namespace NewsBreak.Application.UseCases.Lifx.SetState
 
         public SetStateInteractor(ILifxGateway gateway, IMapper mapper)
         {
-            this.m_Gateway = gateway ?? throw new ArgumentNullException(nameof(gateway));
+            this.m_LifxGateway = gateway ?? throw new ArgumentNullException(nameof(gateway));
             this.m_Mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
@@ -30,7 +30,7 @@ namespace NewsBreak.Application.UseCases.Lifx.SetState
 
         Task IUseCaseInteractor<SetStateInputPort, ISetStateOutputPort>.HandleAsync(SetStateInputPort inputPort, ISetStateOutputPort outputPort, CancellationToken cancellationToken)
         {
-            _ = this.m_Gateway.SetState(this.m_Mapper.Map<LifxStateDto>(inputPort), cancellationToken);
+            _ = this.m_LifxGateway.SetState(this.m_Mapper.Map<LifxStateDto>(inputPort), cancellationToken);
             return Task.CompletedTask;
         }
 

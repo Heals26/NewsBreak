@@ -29,7 +29,7 @@
 
         #region Methods
 
-        public virtual async Task<HttpResponseMessage>
+        //public virtual async Task<HttpResponseMessage>
 
         #endregion Methods
 

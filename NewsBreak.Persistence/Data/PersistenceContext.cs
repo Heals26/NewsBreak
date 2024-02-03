@@ -17,29 +17,22 @@ namespace NewsBreak.Persistence.Data
         #region Methods
 
         public void Add<TEntity>(TEntity entity) where TEntity : class
-        {
-            throw new NotImplementedException();
-        }
+            => base.Add(entity);
 
         public TEntity Find<TEntity>(object entityID, params object[] additionalEntityIDs) where TEntity : class
-        {
-            throw new NotImplementedException();
-        }
+            => base.Find<TEntity>(new[] { entityID }.Concat(additionalEntityIDs).ToArray());
 
         public IQueryable<TEntity> GetEntities<TEntity>() where TEntity : class
-        {
-            throw new NotImplementedException();
-        }
+            => base.Set<TEntity>().AsQueryable();
 
         public void Remove<TEntity>(TEntity entity) where TEntity : class
-        {
-            throw new NotImplementedException();
-        }
+            => base.Remove(entity);
+
+        public void RemoveRange<TEntity>(IEnumerable<TEntity> entities) where TEntity : class
+            => base.RemoveRange();
 
         public Task<int> SaveChangesAsync(CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+            => base.SaveChangesAsync(cancellationToken);
 
         #endregion Methods
 

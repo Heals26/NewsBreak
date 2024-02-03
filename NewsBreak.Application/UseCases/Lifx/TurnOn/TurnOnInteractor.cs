@@ -16,7 +16,7 @@ namespace NewsBreak.Application.UseCases.Lifx.TurnOn
         #region Constructors
 
         public TurnOnInteractor(ILifxGateway gateway)
-            => this.m_Gateway = gateway ?? throw new ArgumentNullException((nameof(gateway));
+            => this.m_Gateway = gateway ?? throw new ArgumentNullException(nameof(gateway));
 
         #endregion Constructors
 

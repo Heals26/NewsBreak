@@ -11,9 +11,9 @@ namespace NewsBreak.WebApi.Controllers
         #region Lights
 
         [HttpPut("/lights/all/state")]
-        public Task<IActionResult> SetLightState([FromBody] SetStateApiRequest request)
+        public async Task<IActionResult> SetLightState([FromBody] SetStateApiRequest request)
         {
-
+            return this.NoContent();
         }
 
         #endregion Lights

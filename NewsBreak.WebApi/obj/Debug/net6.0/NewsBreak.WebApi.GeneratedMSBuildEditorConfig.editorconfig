@@ -9,3 +9,5 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = NewsBreak.WebApi
 build_property.ProjectDir = D:\Projects\NewsBack\GitHub\NewsBreak\NewsBreak.WebApi\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
