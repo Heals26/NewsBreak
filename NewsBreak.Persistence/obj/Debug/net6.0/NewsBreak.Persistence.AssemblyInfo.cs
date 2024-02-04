@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NewsBreak.Persistence")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9e0429aa43561a89d0224d67bcc8dbf5e34599e")]
 [assembly: System.Reflection.AssemblyProductAttribute("NewsBreak.Persistence")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NewsBreak.Persistence")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -25,7 +25,32 @@
       "ProjectGuid": "ee69614c-8afa-4493-80c3-7e0b50193290",
       "DisplayName": "NewsBreak.Application",
       "ColorIndex": 3
+    },
+    "4172ae69-1207-42f3-85df-afa4f97c0249": {
+      "ProjectGuid": "4172ae69-1207-42f3-85df-afa4f97c0249",
+      "DisplayName": "NewsBreak.Application",
+      "ColorIndex": 4
+    },
+    "ec59fbed-6810-43fb-9f04-1f6acace4c5e": {
+      "ProjectGuid": "ec59fbed-6810-43fb-9f04-1f6acace4c5e",
+      "DisplayName": "NewsBreak.Domain",
+      "ColorIndex": 5
+    },
+    "b001c731-7a6b-4330-93f3-6c20467575ec": {
+      "ProjectGuid": "b001c731-7a6b-4330-93f3-6c20467575ec",
+      "DisplayName": "NewsBreak.Persistence",
+      "ColorIndex": 6
+    },
+    "478b09d2-9749-4a7c-8d2a-74387069b661": {
+      "ProjectGuid": "478b09d2-9749-4a7c-8d2a-74387069b661",
+      "DisplayName": "NewsBreak.WebApi",
+      "ColorIndex": 7
+    },
+    "71e00471-5fe8-47ef-941c-bfb32d70d4c0": {
+      "ProjectGuid": "71e00471-5fe8-47ef-941c-bfb32d70d4c0",
+      "DisplayName": "NewsBreak.Application.Tests",
+      "ColorIndex": 8
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 9
 }
